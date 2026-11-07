@@ -1,0 +1,11 @@
+schema_version: "1.1"
+name: cut-api-latency-flags
+expected_outcome: |
+  The agent creates improvement/plan.md recording the goal (p95 under 1000 ms),
+  the primary metric, the measurement recipe (./measure.sh), a stop rule, and a
+  backlog. It then iterates: exactly one config change per iteration, a real
+  measurement before and after each change, and one numbered STE-style report per
+  iteration under improvement/reports/. It stops on the goal or the stop rule and
+  leaves plan.md state updated.
+context:
+  scaffold_script: place-files.sh

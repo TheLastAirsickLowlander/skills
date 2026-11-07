@@ -1,0 +1,12 @@
+schema_version: "1.1"
+name: document-improvement-run
+expected_outcome: |
+  The agent detects the improvement-loop output (improvement/plan.md + reports),
+  and writes one self-contained HTML document (inline CSS, inline SVG figures, no
+  external references or scripts) in STE-inspired language: short sentences, plain
+  words, numbers with units. The document states the goal (p95 under 1000 ms), the
+  baseline (1515 ms), each of the four changes in order, the final result (980 ms,
+  −35.3 %), and the next step (sampled logging). A figure shows the latency trend.
+  A glossary explains technical terms for the non-engineer audience.
+context:
+  scaffold_script: place-files.sh

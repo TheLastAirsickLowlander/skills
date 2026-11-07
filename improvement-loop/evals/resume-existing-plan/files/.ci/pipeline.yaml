@@ -1,0 +1,3 @@
+cache_deps: true
+parallel_tests: false
+shallow_clone: true

@@ -1,0 +1,11 @@
+schema_version: "1.1"
+name: raise-eval-score
+expected_outcome: |
+  The agent treats prompt quality as the measurable goal: it writes
+  improvement/plan.md with the primary metric (eval score via ./run_eval.sh), a
+  stop rule, and a backlog of prompt changes. It edits prompt.txt one change per
+  iteration, re-measures each time, keeps or reverts based on the score, writes a
+  numbered STE-style report per iteration, and stops on the target or its own
+  plateau rule with a final summary.
+context:
+  scaffold_script: place-files.sh

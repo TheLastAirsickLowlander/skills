@@ -1,0 +1,7 @@
+{
+  "legacy_analytics": { "enabled": false, "latency_ms": 300 },
+  "verbose_request_logging": { "enabled": true, "latency_ms": 180 },
+  "double_serialization": { "enabled": false, "latency_ms": 120 },
+  "redundant_auth_check": { "enabled": false, "latency_ms": 90 },
+  "prefetch_on_idle": { "enabled": false, "latency_ms": 25 }
+}
