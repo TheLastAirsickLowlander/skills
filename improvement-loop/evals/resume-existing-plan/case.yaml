@@ -1,9 +1,0 @@
-schema_version: "1.1"
-name: resume-existing-plan
-expected_outcome: |
-  The agent detects the existing improvement/plan.md and resumes without
-  re-running setup. It runs the next pending backlog item as a single change,
-  measures with ./ci_time.sh before and after, writes report 003 in the same
-  STE-style format as reports 001-002, and updates the State section of plan.md.
-context:
-  scaffold_script: place-files.sh
